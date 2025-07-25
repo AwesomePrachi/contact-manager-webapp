@@ -1,0 +1,4 @@
+.item:hover {
+  color: goldenrod;
+  transition: 2s;
+}
