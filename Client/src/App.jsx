@@ -9,7 +9,7 @@ const App = () => {
   const [opacity, setOpacity] = useState(false);
   const [reload, setReload] = useState(false);
   const [id, setId] = useState();
-  const url = "http://localhost:5000";
+  const url = import.meta.env.VITE_API_URL;
   useEffect(() => {
     let fetchdatafromapi = async () => {
       let fetchdata = await axios.get(`${url}/`, {
